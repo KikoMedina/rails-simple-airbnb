@@ -1,8 +1,14 @@
-<h1> All our Flats </h1>
 
+<div class=row">
+<h1> <i class="fab fa-airbnb"></i>All our Flats </h1>
+</div>
+
+<div class=row">
 <% @flats.each do |flat| %>
- <h4><%= flat.name %></h4>
+ <h4><i class="fab fa-airbnb"></i><%= flat.name %></h4>
  <p><%= flat.address %></p>
- <p><%= flat.number_of_guests %></p>
+ <span><i class="fas fa-user-friends"></i></i><%= flat.number_of_guests %></span>
  <p><%= flat.price_per_night %></p>
 <% end %>
+
+</div>
